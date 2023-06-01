@@ -1,0 +1,234 @@
+{% extends 'base1.html' %}
+{% block content %}
+
+<style>
+   
+
+#div2 {
+  
+  position: relative;
+  animation-name: example1;
+  animation-duration: 2s;  
+  animation-fill-mode: forwards;
+}
+@keyframes example1 {
+  from {top:100px;}
+  to {top: 30px; color: rgb(199, 197, 197);}
+  
+}
+    
+    
+    
+    
+    
+    /* Container needed to position the overlay. Adjust the width as needed */
+    .container {
+      position: relative;
+      width: 100%;
+    }
+    
+    /* Make the image to responsive */
+    .image {
+      width: 100%;
+      height: 300px;
+    }
+    
+    /* The overlay effect (full height and width) - lays on top of the container and over the image */
+    .overlay {
+      position: absolute;
+      bottom: 100;
+      left:80;
+      right: 0;
+      background-color: #f844988c;
+      overflow: hidden;
+      width: 50%;
+      height: 40%;
+      transform: scale(0);
+      transition: .3s ease;
+    }
+    
+    /* When you mouse over the container, the overlay text will "zoom" in display */
+    .container:hover .overlay {
+      transform: scale(1);
+    }
+    
+    /* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
+    .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    
+    </style>
+    
+    
+    <div style="background-image: url(https://st2.depositphotos.com/1001411/10207/i/450/depositphotos_102074138-stock-photo-beautiful-tulips-on-wooden-background.jpg);background-repeat: no-repeat;background-size: cover;height: 350px;">
+        <div class="row">
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <div id="div2">
+                <h1 style="font-family: cursive;color: rgb(250, 121, 143);text-align: center;margin-top: 20%;">Make Beautiful Flowers Part of Your Life</h1>
+
+            </div>
+      
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4">
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4"></div>
+        </div>
+      
+      </div>
+    
+    
+    
+    
+    
+      <div class="container-fluid ps-5 pe-5">
+        <div class="row mt-4">
+          <div class="col-sm-12 col-md-3 col-lg-3">
+            <div class="container p-2">
+              <img src="https://i.pinimg.com/736x/4e/3f/61/4e3f61a18a7118974423498fd28eb799.jpg" alt="Avatar" class="image">
+              <div class="overlay">
+                <div class="text">
+                  <b>Daliya</b>
+                  <a href="{% url 'details' %}" class="btn btn-outline-light">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3 col-lg-3">
+            <div class="container p-2">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTObNo_1Cn_FX6gLfG9CrSLN2pnXi0H9D9ausAQpze29f2I3ZE4HcTetShuICTGKaiFm08&usqp=CAU" alt="Avatar" class="image">
+              <div class="overlay">
+                <div class="text">
+                  <b>Daliya</b>
+                  <a href="{% url 'details' %}" class="btn btn-outline-light">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3 col-lg-3">
+            <div class="container p-2">
+              <img src="https://i.redd.it/8d7z03jtbtg71.jpg" alt="Avatar" class="image">
+              <div class="overlay">
+                <div class="text">
+                  <b>Daliya</b>
+                  <a href="{% url 'details' %}" class="btn btn-outline-light">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3 col-lg-3">
+            <div class="container p-2">
+              <img src="https://i.pinimg.com/originals/84/64/e3/8464e3020574ef810d65db3358efb838.jpg" alt="Avatar" class="image">
+              <div class="overlay">
+                <div class="text">
+                  <b>Daliya</b>
+                  <a href="{% url 'details' %}" class="btn btn-outline-light">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="row mt-4">
+          <div class="col-sm-12 col-md-3 col-lg-3">
+            <div class="container p-2">
+              <img src="https://i.pinimg.com/736x/4e/3f/61/4e3f61a18a7118974423498fd28eb799.jpg" alt="Avatar" class="image">
+              <div class="overlay">
+                <div class="text">
+                  <b>Daliya</b>
+                  <a href="{% url 'details' %}" class="btn btn-outline-light">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3 col-lg-3">
+            <div class="container p-2">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTObNo_1Cn_FX6gLfG9CrSLN2pnXi0H9D9ausAQpze29f2I3ZE4HcTetShuICTGKaiFm08&usqp=CAU" alt="Avatar" class="image">
+              <div class="overlay">
+                <div class="text">
+                  <b>Daliya</b>
+                  <a href="{% url 'details' %}" class="btn btn-outline-light">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3 col-lg-3">
+            <div class="container p-2">
+              <img src="https://i.redd.it/8d7z03jtbtg71.jpg" alt="Avatar" class="image">
+              <div class="overlay">
+                <div class="text">
+                  <b>Daliya</b>
+                  <a href="{% url 'details' %}" class="btn btn-outline-light">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3 col-lg-3">
+            <div class="container p-2">
+              <img src="https://i.pinimg.com/originals/84/64/e3/8464e3020574ef810d65db3358efb838.jpg" alt="Avatar" class="image">
+              <div class="overlay">
+                <div class="text">
+                  <b>Daliya</b>
+                  <a href="{% url 'details' %}" class="btn btn-outline-light">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="row mt-4">
+          <div class="col-sm-12 col-md-3 col-lg-3">
+            <div class="container p-2">
+              <img src="https://i.pinimg.com/736x/4e/3f/61/4e3f61a18a7118974423498fd28eb799.jpg" alt="Avatar" class="image">
+              <div class="overlay">
+                <div class="text">
+                  <b>Daliya</b>
+                  <a href="{% url 'details' %}" class="btn btn-outline-light">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3 col-lg-3">
+            <div class="container p-2">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTObNo_1Cn_FX6gLfG9CrSLN2pnXi0H9D9ausAQpze29f2I3ZE4HcTetShuICTGKaiFm08&usqp=CAU" alt="Avatar" class="image">
+              <div class="overlay">
+                <div class="text">
+                  <b>Daliya</b>
+                  <a href="{% url 'details' %}" class="btn btn-outline-light">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3 col-lg-3">
+            <div class="container p-2">
+              <img src="https://i.redd.it/8d7z03jtbtg71.jpg" alt="Avatar" class="image">
+              <div class="overlay">
+                <div class="text">
+                  <b>Daliya</b>
+                  <a href="{% url 'details' %}" class="btn btn-outline-light">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3 col-lg-3">
+            <div class="container p-2">
+              <img src="https://i.pinimg.com/originals/84/64/e3/8464e3020574ef810d65db3358efb838.jpg" alt="Avatar" class="image">
+              <div class="overlay">
+                <div class="text">
+                  <b>Daliya</b>
+                  <a href="{% url 'details' %}" class="btn btn-outline-light">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+   
+
+{% endblock %}
