@@ -1,0 +1,49 @@
+
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Launch static backdrop modal
+  </button> -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="buy" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog" >
+      <div class="modal-content" style="background-color: pink;">
+        <div class="modal-header" >
+          <h1 class="modal-title fs-5" id="staticBackdropLabel" style="color: rgb(252, 250, 250);font-family: cursive;">Card Details</h1>
+          
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="" method="post">
+                <label for="" style="color: white;font-family: cursive;">Card Type</label><br>
+               
+                        <img width="60" height="60" src="https://img.icons8.com/color/48/visa.png" alt="visa"/>
+                        <img width="60" height="60" src="https://img.icons8.com/color/48/mastercard.png" alt="mastercard"/>
+                        <img width="60" height="60" src="https://img.icons8.com/color/48/rupay.png" alt="rupay"/>
+                        <img width="60" height="60" src="https://img.icons8.com/fluency/48/paypal.png" alt="paypal"/>
+                        <img width="60" height="60" src="https://img.icons8.com/3d-fluency/94/amex.png" alt="amex"/>
+
+                        <div class="form-group mb-4 mt-3">
+                            <input type="text"  class="form-control"  placeholder="Cardholder's Name" name="" required style="border-radius: 15px;">
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="form-group mb-4">
+                            <input type="number"  class="form-control"  placeholder="Card Number" name="" required style="border-radius: 15px;">
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="form-group mb-4">
+                            <input type="text" class="form-control"    placeholder="Expiration" name="" required style="border-radius: 15px;">
+                            <input type="number" class="form-control mt-2"    placeholder="cvv" name="" required style="border-radius: 15px;width: 50%;">
+
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+    
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="{% url 'user_home' %}" class="btn" style="background-color: rgb(248, 94, 119);color: white;">Pay Now</a>
+        </div>
+      </div>
+    </div>
+  </div>

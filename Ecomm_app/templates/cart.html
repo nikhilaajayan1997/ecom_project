@@ -1,0 +1,103 @@
+{% extends 'base1.html' %}
+{% block content %}
+{% include 'buy_now.html' %}
+<div style="background-image: url(https://youmeandtrends.com/wp-content/uploads/2015/11/free-download-wallpapers-for-desktop-beautiful-flowers-pictures-new-at-designer-hd-wallpapers-download.jpg);background-repeat: no-repeat;background-size: cover;height: 800px;">
+    <div style="background-color: rgba(247, 79, 107, 0.541);height: 800px;">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4"></div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <center>
+                    <h1 style="font-family: cursive;color: rgb(243, 240, 240);">My Bag</h1>
+        
+                </center>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4"></div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-sm-12 col-md-3 col-lg-3"></div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="card mb-3" style="max-width: 640px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Ibi63lVgHlvgf7szeIEaMba05aY78Dq1uzmE9nZflnp7pLPpWIQpUaa3e0Vc0_j6xZ8&usqp=CAU" class="img-fluid rounded-start" alt="..." style="height:220px;width: 100%;">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h3 class="card-title" style="color: rgb(245, 108, 131);font-family: cursive;">Daliya</h3>
+                          <p class="card-text">This is a wider card with supporting text below.card with supporting text below </p>
+                          <label for="" style="color: rgb(245, 98, 123);font-family: cursive;">Qty :</label>
+                          <select name="" id="select" onclick="price()" style="width: 12%;border-radius: 5px;color:rgb(245, 98, 123);">
+                            <option value="1" selected >1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                          </select><br><br>
+        
+                          <label for="" style="color: rgb(245, 98, 123);font-family: cursive;">Price :</label>
+                          <label for="" style="color: rgb(245, 98, 123);font-family: cursive;">$</label>
+                          <label for="" id="num" style="color: rgb(245, 98, 123);font-family: cursive;">50</label>
+                          <a href="" data-bs-toggle="modal" data-bs-target="#buy" class="btn " style="background-color: rgb(248, 124, 144);color: white;">Buy Now</a>
+        
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3"></div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-sm-12 col-md-3 col-lg-3"></div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="card mb-3" style="max-width: 640px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW3ZgOZNuVhCqOqN1AZnINHW3VnxpckVfu5R94m4d0Rvp3SaweCjQZDevF_Eo31BHlBYo&usqp=CAU" class="img-fluid rounded-start" alt="..." style="height:220px;width: 100%;">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h3 class="card-title" style="color: rgb(245, 108, 131);font-family: cursive;">Daliya</h3>
+                          <p class="card-text">This is a wider card with supporting text below.card with supporting text below </p>
+                          <label for="" style="color: rgb(245, 98, 123);font-family: cursive;">Qty :</label>
+                          <select name="" id="select1" onclick="price1()" style="width: 12%;border-radius: 5px;color:rgb(245, 98, 123);">
+                            <option value="1" selected >1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                          </select><br><br>
+        
+                          <label for="" style="color: rgb(245, 98, 123);font-family: cursive;">Price :</label>
+                          <label for="" style="color: rgb(245, 98, 123);font-family: cursive;">$</label>
+                          <label for="" id="num1" style="color: rgb(245, 98, 123);font-family: cursive;">50</label>
+                          <a href="" data-bs-toggle="modal" data-bs-target="#buy" class="btn " style="background-color: rgb(248, 124, 144);color: white;">Buy Now</a>
+        
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3"></div>
+        </div>
+    </div>
+    
+</div>
+
+<script>
+    function price()
+    {
+        var x=document.getElementById('select').value;
+        var y=50;
+        var z=x*y
+        document.getElementById('num').innerHTML=z;
+
+    }
+    function price1()
+    {
+        var x=document.getElementById('select1').value;
+        var y=50;
+        var z=x*y
+        document.getElementById('num1').innerHTML=z;
+
+    }
+</script>
+
+
+{% endblock %}

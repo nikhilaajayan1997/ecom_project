@@ -72,6 +72,29 @@ transform: translateY(0)
 transform: translateY(-20px)
 }
 }
+
+
+
+
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #b4b4b4;
+}
+
+
+
 </style>
 <body>
 <nav class="navbar navbar-expand-lg sticky-top " data-bs-theme="dark" style="background-color: rgb(252, 105, 129);">
@@ -81,32 +104,40 @@ transform: translateY(-20px)
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="{% url 'home_page' %}">HOME</a>
+            <a class="nav-link " aria-current="page" href="{% url 'user_home' %}">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'aboutus' %}">ABOUT</a>
+            <a class="nav-link" href="{% url 'aboutus1' %}">ABOUT</a>
           </li>
           
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'contactus' %}">CONTACT</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'gallery' %}">GALLERY</a>
+            <a class="nav-link" href="{% url 'contactus1' %}">CONTACT</a>
           </li>
           
           
+          
           <li class="nav-item">
-            <a class="nav-link" href="#">LOGOUT</a>
+            <a class="nav-link" href="{% url 'home_page' %}">LOGOUT</a>
           </li>
           
           
           
         </ul>
+
+
+
         <form class="d-flex" role="search">
-          <input id="sea" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="border: none;background-color: rgb(252, 105, 129);">
+         
+          <div class="form-group has-search">
+            <span class="fa fa-search form-control-feedback"></span>
+            <input  type="text" class="form-control bg-light" style="border: none;background-color: rgb(252, 105, 129);" placeholder="Search">
+          </div>
         </form>
+
+
+
       </div>
     </div>
   </nav>

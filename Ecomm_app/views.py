@@ -14,11 +14,20 @@ def home_page(request):
 def aboutus(request):
     return render(request,'about.html')
 
+def aboutus1(request):
+    return render(request,'about1.html')
+
 def contactus(request):
     return render(request,'contact.html')
 
+def contactus1(request):
+    return render(request,'contact1.html')
+
 def details(request):
     return render(request,'details.html')
+
+def details1(request):
+    return render(request,'details1.html')
 
 def sign_up(request):
     return render(request,'sign_up.html')
@@ -57,4 +66,7 @@ def user_login(request):
     else:
         messages.info(request,'invalid credentials')
         return redirect('home_page')
+
+def cart(request):
+    return render(request,'cart.html')
         
