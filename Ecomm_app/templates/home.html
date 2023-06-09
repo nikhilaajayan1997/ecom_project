@@ -140,53 +140,64 @@
 
 
 
-<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="500">
-        <div  class="carousel-caption d-none d-md-block mb-5">
-                <h1 style="font-family: cursive;">Make Beautiful Flowers Part of Your Life</h1>
-            <p>Some representative placeholder content for the second slide.</p>
-            <a href="{% url 'details' %}" class="btn btn-outline-light p-3 mb-5" style="font-weight: bold;">View Now</a>
-            <a href="{% url 'home' %}"  class="btn btn-outline-light p-3 mb-5" style="font-weight: bold;">Order Now</a>
-          </div>
-        <img src="https://wallpaperaccess.com/full/371547.jpg" class="d-block w-100" alt="..." style="height: 500px;">
-            
-      </div>
-      <div class="carousel-item" data-bs-interval="500">
-        <div  class="carousel-caption d-none d-md-block mb-5">
-            <h1 style="font-family: cursive;">Make Beautiful Flowers Part of Your Life</h1>
-            <p>Some representative placeholder content for the second slide.</p>
-            <a href="{% url 'details' %}" class="btn btn-outline-light p-3 mb-5" style="font-weight: bold;">View Now</a>
-            <a href="{% url 'home' %}"  class="btn btn-outline-light p-3 mb-5" style="font-weight: bold;">Order Now</a>
+<div class="row">
+  <div class="col-sm-12">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000" >
+          <div  class="carousel-caption d-none d-md-block mb-5">
+                  <h1 style="font-family: cursive;">Make Beautiful Flowers Part of Your Life</h1>
+              <p>Some representative placeholder content for the second slide.</p>
+              <a href="{% url 'details' %}" class="btn btn-outline-light p-3 mb-5" style="font-weight: bold;">View Now</a>
+              <a href="{% url 'home' %}"  class="btn btn-outline-light p-3 mb-5" style="font-weight: bold;">Order Now</a>
+            </div>
+          <!-- <img src="https://wallpaperaccess.com/full/371547.jpg" class="d-block w-100" alt="..." > -->
+          <!-- <img src="https://wallpaper-house.com/data/out/8/wallpaper2you_212359.jpg" class="d-block w-100" alt="..." > -->
 
-          </div>
-          <img src="https://w.forfun.com/fetch/cf/cfadd4af369ca29075eebbd82b2e5b56.jpeg" class="d-block w-100" alt="..." style="height: 500px;">
+          <!-- https://wallpaper-house.com/data/out/8/wallpaper2you_212359.jpg -->
+          <img src="https://c4.wallpaperflare.com/wallpaper/329/923/694/flower-pink-petals-bud-wallpaper-preview.jpg" class="d-block w-100" alt="..." >
+        </div>
+        <!-- <div class="carousel-item" data-bs-interval="2000" >
+          <div  class="carousel-caption d-none d-md-block mb-5">
+              <h1 style="font-family: cursive;">Make Beautiful Flowers Part of Your Life</h1>
+              <p>Some representative placeholder content for the second slide.</p>
+              <a href="{% url 'details' %}" class="btn btn-outline-light p-3 mb-5" style="font-weight: bold;">View Now</a>
+              <a href="{% url 'home' %}"  class="btn btn-outline-light p-3 mb-5" style="font-weight: bold;">Order Now</a>
+  
+            </div> -->
+            <!-- <img src="https://w.forfun.com/fetch/cf/cfadd4af369ca29075eebbd82b2e5b56.jpeg" class="d-block w-100" alt="..." style="height: 500px;"> -->
+            <!-- <img src="https://cutewallpaper.org/21/cartoon-flowers-wallpapers/Pink-Flowers-Cartoon-1-Hd-Wallpaper-HdFlowerWallpaper.com.jpg" class="d-block w-100" alt="..." > -->
+            <!-- <img src="https://wallpaper-house.com/data/out/8/wallpaper2you_212359.jpg" class="d-block w-100" alt="..." > -->
 
+
+  
+        <!-- </div> -->
+        <!-- <div class="carousel-item" data-bs-interval="2000">
+          <div class="carousel-caption d-none d-md-block mb-5">
+              <h1 style="font-family: cursive;">Make Beautiful Flowers Part of Your Life</h1>
+              <p>Some representative placeholder content for the second slide.</p>
+              <a href="{% url 'details' %}" class="btn btn-outline-light p-3 mb-5" style="font-weight: bold;">View Now</a>
+              <a href="{% url 'home' %}"  class="btn btn-outline-light p-3 mb-5" style="font-weight: bold;">Order Now</a>
+            </div>
+          <img src="https://wallpapercave.com/wp/wp3498884.jpg" class="d-block w-100" alt="..." style="height: 500px;">
+        </div> -->
       </div>
-      <div class="carousel-item" data-bs-interval="1000">
-        <div class="carousel-caption d-none d-md-block mb-5">
-            <h1 style="font-family: cursive;">Make Beautiful Flowers Part of Your Life</h1>
-            <p>Some representative placeholder content for the second slide.</p>
-            <a href="{% url 'details' %}" class="btn btn-outline-light p-3 mb-5" style="font-weight: bold;">View Now</a>
-            <a href="{% url 'home' %}"  class="btn btn-outline-light p-3 mb-5" style="font-weight: bold;">Order Now</a>
-          </div>
-        <img src="https://wallpapercave.com/wp/wp3498884.jpg" class="d-block w-100" alt="..." style="height: 500px;">
-      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+  
   </div>
-
-  <div class="bg-light pt-5">
-    <div class="row pb-3">
+</div>
+  <div class=" bg-light pt-5">
+    <div class="row pb-3 ">
         <div class="col-sm-12 col-md-3 col-lg-3">
-            <div id="over" class="p-2 shk" style="width: 100%;border-right: 1px solid rgb(235, 147, 162);">
+            <div id="over" class="ps-4 pe-4 pb-4  shk" style="width: 100%;border-right: 1px solid rgb(235, 147, 162);">
                 <center>                
                     <img width="64" height="64" src="https://img.icons8.com/arcade/64/flower.png" alt="flower"/>
                     <h3 style="font-family: cursive;">100% Freshness</h3>
@@ -198,7 +209,7 @@
             </div>
         </div>
         <div class="col-sm-12 col-md-3 col-lg-3">
-            <div id="over" class="p-2 shk" style="width: 100%;border-right: 1px solid rgb(235, 147, 162);">
+            <div id="over" class="ps-4 pe-4 pb-4 shk" style="width: 100%;border-right: 1px solid rgb(235, 147, 162);">
                 <center>  
                     <img width="64" height="64" src="https://img.icons8.com/arcade/64/person-female.png" alt="person-female"/>              
                     <h3 style="font-family: cursive;">Made by Artist</h3>
@@ -210,7 +221,7 @@
             </div>
         </div>
         <div class="col-sm-12 col-md-3 col-lg-3">
-            <div id="over" class="p-2 shk" style="width: 100%;border-right: 1px solid rgb(235, 147, 162);">
+            <div id="over" class="ps-4 pe-4 pb-4  shk" style="width: 100%;border-right: 1px solid rgb(235, 147, 162);">
                 <center>  
                     <img width="64" height="64" src="https://img.icons8.com/external-flat-wichaiwi/64/external-courier-gig-economy-flat-wichaiwi.png" alt="external-courier-gig-economy-flat-wichaiwi"/>              
                     <h3 style="font-family: cursive;">Own Courier</h3>
@@ -222,7 +233,7 @@
             </div>
         </div>
         <div  class="col-sm-12 col-md-3 col-lg-3">
-            <div id="over" class="p-2 shk" style="width: 100%;border-right: 1px solid rgb(235, 147, 162);">
+            <div id="over" class="ps-4 pe-4 pb-4  shk" style="width: 100%;border-right: 1px solid rgb(235, 147, 162);">
                 <center>                
                     <img width="64" height="64" src="https://img.icons8.com/arcade/64/flower.png" alt="flower"/>
                     <h3 style="font-family: cursive;">100% Freshness</h3>
@@ -237,12 +248,12 @@
   </div>
 
 <!-- ........................................   ABOUT US....................................... -->
-  <div style="background-color: rgb(238, 156, 169);">
-    <div class="row pt-3">
-        <div class="col-sm-12 col-md-6 col-lg-6">
+  <div  style=" background-color: rgb(238, 156, 169);">
+    <div class="row pt-3 ">
+        <div class="col-sm-12 col-md-6 col-lg-6 ps-4 pe-4">
             <div class="pt-3" style="width: 100%;height: 300px;">
                 <h1 class="mt-4" style="font-family: cursive;color: white;text-align: center;">We Provide All Kind Of Fresh Flower Services</h1>
-                <p class="p-3" style="text-align: justify;">
+                <p class="p-2" style="text-align: justify;">
                     For Heather Henson, of Boreal Blooms in Cold Lake, Alberta, Canada, growing flowers that can be dried
                      and incorporated into late fall and winter floral arrangements has been a game-changer
                     
@@ -250,26 +261,26 @@
 
             </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6">
-            <div   style="width: 100%;height: 300px;border-radius: 25px;">
-                <img id="img1" src="https://images4.fanpop.com/image/photos/22100000/Spring-flowers-spring-22176495-1920-1080.jpg" alt="" style="width: 100%;height: 300px;border-radius: 25px;">
+        <div class="col-sm-12 col-md-6 col-lg-6  ps-4 pe-4">
+            <div class="mt-2"   style="width: 100%;height: 300px;border-radius: 25px;">
+                <img id="img1"  src="https://images4.fanpop.com/image/photos/22100000/Spring-flowers-spring-22176495-1920-1080.jpg" alt=""  style="width: 100%;height: 300px;border-radius: 25px;">
 
             </div>
         </div>
     </div>
-    <div class="row pb-3">
-        <div class="col-sm-12 col-md-6 col-lg-6">
-            <div    style="width: 100%;height: 300px;border-radius: 25px;">
-            <img id="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBJjHpuvuZp8KUHEc9wiO1nlRsSBonjan5zw&usqp=CAU" alt=""  style="width: 100%;height: 300px;border-radius: 25px;">
+    <div class="row pb-3 mt-2 ">
+        <div class="col-sm-12 col-md-6 col-lg-6  ps-4 pe-4">
+            <div  class=" mt-2"   style="width: 100%;height: 300px;border-radius: 25px;">
+            <img id="img1"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBJjHpuvuZp8KUHEc9wiO1nlRsSBonjan5zw&usqp=CAU" alt=""   style="width: 100%;height: 300px;border-radius: 25px;">
 
         </div>
 
            
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="col-sm-12 col-md-6 col-lg-6  ps-4 pe-4">
             <div  style="width: 100%;height: 300px;">
                 <h1 class="mt-5"  style="font-family: cursive;color: white;text-align: center;">We Provide All Kind Of Fresh Flower Services</h1>
-                <p class="p-3" style="text-align: justify;">
+                <p class="p-2" style="text-align: justify;">
                     For Heather Henson, of Boreal Blooms in Cold Lake, Alberta, Canada, growing flowers that can be dried
                      and incorporated into late fall and winter floral arrangements has been a game-changer
                      
@@ -282,7 +293,7 @@
   </div>
 
   <div>
-    <div class="row pt-5">
+    <div class="row pt-3">
         <div class="col-sm-12 col-md-4 col-lg-4"></div>
         <div class="col-sm-12 col-md-4 col-lg-4">
             <center>
@@ -311,11 +322,11 @@
 
     </div>
     <fieldset1 id="field1">
-        <div class="container mb-5 mt-4">
-            <div class="row pt-2">
-                <div class="col-sm-12 col-md-3 col-lg-3">
-                    <div class="card1" style="border-radius: 10px;">
-                        <a href=""><img src="data:image/jpeg;base64,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
+        <div class=" mb-5 mt-4">
+            <div class="row">
+                <div class="col-sm-12 col-md-3 col-lg-3 ps-4 pe-4">
+                  <div class="card1 mt-3" style="border-radius: 10px;">
+                    <a href=""><img src="data:image/jpeg;base64,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
                             lqqj2+p6MlZHDW3636Ajw5maDtXfnaWCteoNKcz+zVS/M97MCZu8kmUxZtk+3Q29n1Fr9pr9ZrddZ4W2qla/wAKKvu+gMvr3M2Jpub0afPjqrDZ/R2InG/9Z1dqs9+r1L/xWvj6ZxPBtPGxZveJ725n6mJnLb0ksd+vs3cqyjjZC+K8GlY/QCc49oY2Mwqs2U9Yu4ytlVCslRrwTx8OAFYHA5dQfKaPiGJrezYjijmdIUIQkUQhCNBwjhKgEyHUsq45nkPnMeZGnbkR39R6zGX6V1Hdj2X1MiW62xnLAN2aEoo8iRzM6JsvYWk0i8Onorr8wo4j6mcf0ntN1dVS18CsyDh4s4zjymdu9vLtDamo7I2imsDL8A97HgCZ0xsbdfsvRfidR5ZErFqv8ILDzHL+sxdBsaqsAnLv+ZyWOZ6eAPITonTz79GOHCYQ92B7o+XSeM1TVOz2IRlQvGCSvCM4+5+szd4N5dLoULWuOLuQc2J8AJyrau+l+qtV0Zkr4vdT4QRnHPxnh+ZxTLHq3f8AF8te3RtQ6OVKBnKkMoUZIIBHd16n6xajY9uqr4DY+kR/jKY7d0/IG6ID3nmfSaBsreayq5X4gqfDwNyDHrgeJnW9k7Rr1VaujA5HMZ6Gcfg8Vx35Xv8AFuUvprmh9nuzKelLu3e1lrtk+gIH9Jk6ncLZtowdPw+aO6n7zaHT5SlruD4xy/MJ9Lxx/GXL94/Zk6Ix0NnEBz7N+pHgGnMNfobdO5S+tq3H7rDr5g98+pEtRxlSCJre+ewqNVprDYi8aqSr8sqfWZ8JPRqPnaGJJ1wSPAkRQyWIRwgKKOEBQgYQJQhCQSkqmwRIxCSwWXrgz1N19sHQ6hbP3DyceXjMCxeJQZjhSekzjeiV9AUb9aTshYbF6ZxkTSt4fafY/EmlXhHMcbcvmBOaQnTyrW2RrdZZe5sudnc97HOPTwmbpdXUVVbA4cDGVxhgOnpPKk6/iE55YzKds5dr9oartG5DhRchV8PE+szt3t4r9BYHqYlM+9WSeFh5eBnkP1PqYpZjJJIsun0Fu3vvptWg4nCP+8jEAgz2NftSha2YupGD3ifPGy9KSQ+SvocT0NqXOE4TY5GOnEZi/I1l4ztm5Rka3fLV1am06a09lxnhVua/KUbS3412prNb2BVIw3CCCRNZIkp2XyqMlCEgIQhDKMUZiMrRGKMxQJwijkBCElAz9MvEuPKCU9nknqZXoHwY9U7FvKeey+Vn6xfbFcczIyYUnmekhO8bgk6viHrISyr4hF9FRs6n1kZKzqfWQMQetTrVRFC82+0x9bqGfrMagc4XnnOU48ZluM67VwiEc7NCEIQyIQkYBImMxGVoRRwgOOIRyCUIQgNGwczLe3K+cw5NDM5Yy9pYTOTIyTiRliwSdfxCQk6/iEX0VFzzMUH6mIRCL6RgZlTnJlx5LKJnH3akEIKM9JclXeZq2RLVOIS1xKTEocjJSJlCMUDCVoQhCAxHIxyByUhHKqUAYQgWnmJVJoZFxMzrpmFJIeYkY0POKtJusdYyYm6y2kd8l9J9C1pGustJrWWM9GmoIMmYyzmMZuWopr04Uc5TfYBJ6rU9wmAzZkwlvdTGW90M2YoswnZ0ERhCUEIQgEIQgEIQkBmGYQhTzHIxiVUwZNhkSqWIZms1GCwcRLKG0yK05CUAcxPQoTlOfJl4xjK6iylAOcp1Wo7hJXvgTznbJnLjx8r5VjGbqLHMUDCel2KEIQCEISghDEMQCEBCAGHfCEgay5YQgJpWYQhRGkcJC+jaRXrHCE+kk6z0aekITjzenLNj6qYRhCa4v+WsCMIQnVsoQhKCEIQHCEIEm7vSKEIH/9k=" alt="" style="border-radius: 10px;"></a>
                         <div class="info">
                             <a href="{% url 'details' %}" style="text-decoration: none;">                            
@@ -330,9 +341,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-3 col-lg-3">
-                    <div class="card1" style="border-radius: 10px;">
-                        <a href=""><img src="https://i.pinimg.com/originals/84/64/e3/8464e3020574ef810d65db3358efb838.jpg" alt="" style="border-radius: 10px;"></a>
+                <div class="col-sm-12 col-md-3 col-lg-3 ps-4 pe-4">
+                  <div class="card1 mt-3" style="border-radius: 10px;">
+                    <a href=""><img src="https://i.pinimg.com/originals/84/64/e3/8464e3020574ef810d65db3358efb838.jpg" alt="" style="border-radius: 10px;"></a>
                         <div class="info">
                             <h1 style="color:#0a0a0a;text-align: center;">Daliya</h1>
                             <p style="text-align: justify;">With supporting text below as a natural lead-in to additional content.
@@ -344,9 +355,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-3 col-lg-3">
-                    <div class="card1" style="border-radius: 10px;">
-                        <a href=""><img src="https://wallpapers.com/images/hd/tropical-plants-pictures-vrehsqcdx53tlvv7.jpg" alt="" style="border-radius: 10px;"></a>
+                <div class="col-sm-12 col-md-3 col-lg-3 ps-4 pe-4">
+                  <div class="card1 mt-3" style="border-radius: 10px;">
+                    <a href=""><img src="https://wallpapers.com/images/hd/tropical-plants-pictures-vrehsqcdx53tlvv7.jpg" alt="" style="border-radius: 10px;"></a>
                         <div class="info">
                             <h1 style="color:#0a0a0a;text-align: center;">Daliya</h1>
                             <p style="text-align: justify;">With supporting text below as a natural lead-in to additional content.
@@ -358,9 +369,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-3 col-lg-3">
-                    <div class="card1" style="border-radius: 10px;">
-                        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSftyfXDoNqMPR5h1FXeUirSXbMsuP6kQ-tVQ&usqp=CAU" alt="" style="border-radius: 10px;"></a>
+                <div class="col-sm-12 col-md-3 col-lg-3 ps-4 pe-4">
+                  <div class="card1 mt-3" style="border-radius: 10px;">
+                    <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSftyfXDoNqMPR5h1FXeUirSXbMsuP6kQ-tVQ&usqp=CAU" alt="" style="border-radius: 10px;"></a>
                         <div class="info">
                             <h1 style="color:#0a0a0a;text-align: center;">Daliya</h1>
                             <p style="text-align: justify;">With supporting text below as a natural lead-in to additional content.
@@ -373,10 +384,10 @@
                     </div>
                 </div>
             </div>
-            <div class="row pt-2">
-                <div class="col-sm-12 col-md-3 col-lg-3">
-                    <div class="card1" style="border-radius: 10px;">
-                        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAnDgUqPnErS6MQeq_ZdE5qBA6axBNw_Jokg&usqp=CAU" alt="" style="border-radius: 10px;"></a>
+            <div class="row pt-2 ">
+              <div class="col-sm-12 col-md-3 col-lg-3 ps-4 pe-4">
+                <div class="card1 mt-3" style="border-radius: 10px;">
+                  <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAnDgUqPnErS6MQeq_ZdE5qBA6axBNw_Jokg&usqp=CAU" alt="" style="border-radius: 10px;"></a>
                         <div class="info">
                             <h1 style="color:#0a0a0a;text-align: center;">Daliya</h1>
                             <p style="text-align: justify;">With supporting text below as a natural lead-in to additional content.
@@ -388,9 +399,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-3 col-lg-3">
-                    <div class="card1" style="border-radius: 10px;">
-                        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIqDAxuMzOt7VTFasHY8c_zMgMxRMpUPiMZg&usqp=CAU" alt="" style="border-radius: 10px;"></a>
+                <div class="col-sm-12 col-md-3 col-lg-3 ps-4 pe-4">
+                  <div class="card1 mt-3" style="border-radius: 10px;">
+                    <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIqDAxuMzOt7VTFasHY8c_zMgMxRMpUPiMZg&usqp=CAU" alt="" style="border-radius: 10px;"></a>
                         <div class="info">
                             <h1 style="color:#0a0a0a;text-align: center;">Daliya</h1>
                             <p style="text-align: justify;">With supporting text below as a natural lead-in to additional content.
@@ -402,9 +413,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-3 col-lg-3">
-                    <div class="card1" style="border-radius: 10px;">
-                        <a href=""><img src="https://images.unsplash.com/photo-1469259943454-aa100abba749?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Zmxvd2Vyc3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" alt="" style="border-radius: 10px;"></a>
+                <div class="col-sm-12 col-md-3 col-lg-3 ps-4 pe-4">
+                  <div class="card1 mt-3" style="border-radius: 10px;">
+                    <a href=""><img src="https://images.unsplash.com/photo-1469259943454-aa100abba749?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Zmxvd2Vyc3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" alt="" style="border-radius: 10px;"></a>
                         <div class="info">
                             <h1 style="color:#0a0a0a;text-align: center;">Daliya</h1>
                             <p style="text-align: justify;">With supporting text below as a natural lead-in to additional content.
@@ -416,9 +427,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-3 col-lg-3">
-                    <div class="card1" style="border-radius: 10px;">
-                        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQULWPJWQRwdhObYiFcdiSYFCWYxJr-1iv0mjsC4dL9lnPEmZROXZbq77g-Rm3FeWidIWo&usqp=CAU" alt="" style="border-radius: 10px;"></a>
+                <div class="col-sm-12 col-md-3 col-lg-3 ps-4 pe-4">
+                  <div class="card1 mt-3" style="border-radius: 10px;">
+                    <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQULWPJWQRwdhObYiFcdiSYFCWYxJr-1iv0mjsC4dL9lnPEmZROXZbq77g-Rm3FeWidIWo&usqp=CAU" alt="" style="border-radius: 10px;"></a>
                         <div class="info">
                             <h1 style="color:#0a0a0a;text-align: center;">Daliya</h1>
                             <p style="text-align: justify;">With supporting text below as a natural lead-in to additional content.
@@ -438,8 +449,8 @@
         <div class="container mb-5 mt-4">
               <div class="row pt-2">
                 <div class="col-sm-12 col-md-3 col-lg-3">
-                    <div class="card1" style="border-radius: 10px;">
-                        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAnDgUqPnErS6MQeq_ZdE5qBA6axBNw_Jokg&usqp=CAU" alt="" style="border-radius: 10px;"></a>
+                  <div class="card1 mt-2" style="border-radius: 10px;">
+                    <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAnDgUqPnErS6MQeq_ZdE5qBA6axBNw_Jokg&usqp=CAU" alt="" style="border-radius: 10px;"></a>
                         <div class="info">
                             <h1 style="color:#0a0a0a;text-align: center;">Daliya</h1>
                             <p style="text-align: justify;">With supporting text below as a natural lead-in to additional content.
@@ -452,8 +463,8 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-3 col-lg-3">
-                    <div class="card1" style="border-radius: 10px;">
-                        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIqDAxuMzOt7VTFasHY8c_zMgMxRMpUPiMZg&usqp=CAU" alt="" style="border-radius: 10px;"></a>
+                  <div class="card1 mt-2" style="border-radius: 10px;">
+                    <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIqDAxuMzOt7VTFasHY8c_zMgMxRMpUPiMZg&usqp=CAU" alt="" style="border-radius: 10px;"></a>
                         <div class="info">
                             <h1 style="color:#0a0a0a;text-align: center;">Daliya</h1>
                             <p style="text-align: justify;">With supporting text below as a natural lead-in to additional content.
@@ -466,8 +477,8 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-3 col-lg-3">
-                    <div class="card1" style="border-radius: 10px;">
-                        <a href=""><img src="https://images.unsplash.com/photo-1469259943454-aa100abba749?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Zmxvd2Vyc3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" alt="" style="border-radius: 10px;"></a>
+                  <div class="card1 mt-2" style="border-radius: 10px;">
+                    <a href=""><img src="https://images.unsplash.com/photo-1469259943454-aa100abba749?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Zmxvd2Vyc3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" alt="" style="border-radius: 10px;"></a>
                         <div class="info">
                             <h1 style="color:#0a0a0a;text-align: center;">Daliya</h1>
                             <p style="text-align: justify;">With supporting text below as a natural lead-in to additional content.
@@ -480,8 +491,8 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-3 col-lg-3">
-                    <div class="card1" style="border-radius: 10px;">
-                        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQULWPJWQRwdhObYiFcdiSYFCWYxJr-1iv0mjsC4dL9lnPEmZROXZbq77g-Rm3FeWidIWo&usqp=CAU" alt="" style="border-radius: 10px;"></a>
+                  <div class="card1 mt-2" style="border-radius: 10px;">
+                    <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQULWPJWQRwdhObYiFcdiSYFCWYxJr-1iv0mjsC4dL9lnPEmZROXZbq77g-Rm3FeWidIWo&usqp=CAU" alt="" style="border-radius: 10px;"></a>
                         <div class="info">
                             <h1 style="color:#0a0a0a;text-align: center;">Daliya</h1>
                             <p style="text-align: justify;">With supporting text below as a natural lead-in to additional content.
@@ -496,8 +507,8 @@
             </div>
             <div class="row pt-2">
                 <div class="col-sm-12 col-md-3 col-lg-3">
-                    <div class="card1" style="border-radius: 10px;">
-                        <a href=""><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBEQERERDxERDw8SERERERAQEhEPEA8PGBQZGRgUGBgcIS4lHB4rIxgYJjgnKy80NTU1GiQ7QDszPy41NT8BDAwMEA8QHhISGjQkJSQ3ND81NDQxNDE0NDQ0NDQ0NDE0NDQ0MTQxMTQ0NDQ0NT
+                  <div class="card1 mt-2" style="border-radius: 10px;">
+                    <a href=""><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBEQERERDxERDw8SERERERAQEhEPEA8PGBQZGRgUGBgcIS4lHB4rIxgYJjgnKy80NTU1GiQ7QDszPy41NT8BDAwMEA8QHhISGjQkJSQ3ND81NDQxNDE0NDQ0NDQ0NDE0NDQ0MTQxMTQ0NDQ0NT
                             Q0NDQ0MTQxNDQ0MTQ0NDQ0NP/AABEIAREAuQMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAAAQIDBAYHBQj/xAA9EAACAgEBBQUGAwcDBAMAAAABAgADEQQFBhIhMRNBUWFxByIygZGxFFJiI0JygqH
                             B8BXR4WODkpQkQ1P/xAAZAQEBAQEBAQAAAAAAAAAAAAAAAQIDBAX/xAAhEQEBAAICAgMBAQEAAAAAAAAAAQIRAyESMQRBUaFhMv/
                             aAAwDAQACEQMRAD8A5RGIoxOciGBLlWQRZlVV5j0p1JmZtdRjorEzkQCcrdrIpWmDVTLkWk00wHSY7pPQcTDtEzLqpWG4lDS+1pjtO8Z
@@ -516,8 +527,8 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-3 col-lg-3">
-                    <div class="card1" style="border-radius: 10px;">
-                        <a href=""><img src="https://i.pinimg.com/originals/84/64/e3/8464e3020574ef810d65db3358efb838.jpg" alt="" style="border-radius: 10px;"></a>
+                  <div class="card1 mt-2" style="border-radius: 10px;">
+                    <a href=""><img src="https://i.pinimg.com/originals/84/64/e3/8464e3020574ef810d65db3358efb838.jpg" alt="" style="border-radius: 10px;"></a>
                         <div class="info">
                             <h1 style="color:#0a0a0a;text-align: center;">Daliya</h1>
                             <p style="text-align: justify;">With supporting text below as a natural lead-in to additional content.
@@ -530,8 +541,8 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-3 col-lg-3">
-                    <div class="card1" style="border-radius: 10px;">
-                        <a href=""><img src="https://wallpapers.com/images/hd/tropical-plants-pictures-vrehsqcdx53tlvv7.jpg" alt="" style="border-radius: 10px;"></a>
+                  <div class="card1 mt-2" style="border-radius: 10px;">
+                    <a href=""><img src="https://wallpapers.com/images/hd/tropical-plants-pictures-vrehsqcdx53tlvv7.jpg" alt="" style="border-radius: 10px;"></a>
                         <div class="info">
                             <h1 style="color:#0a0a0a;text-align: center;">Daliya</h1>
                             <p style="text-align: justify;">With supporting text below as a natural lead-in to additional content.
@@ -544,8 +555,8 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-3 col-lg-3">
-                    <div class="card1" style="border-radius: 10px;">
-                        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSftyfXDoNqMPR5h1FXeUirSXbMsuP6kQ-tVQ&usqp=CAU" alt="" style="border-radius: 10px;"></a>
+                  <div class="card1 mt-2" style="border-radius: 10px;">
+                    <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSftyfXDoNqMPR5h1FXeUirSXbMsuP6kQ-tVQ&usqp=CAU" alt="" style="border-radius: 10px;"></a>
                         <div class="info">
                             <h1 style="color:#0a0a0a;text-align: center;">Daliya</h1>
                             <p style="text-align: justify;">With supporting text below as a natural lead-in to additional content.
